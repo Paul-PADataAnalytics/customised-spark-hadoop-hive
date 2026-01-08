@@ -117,7 +117,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-    - ./data:/var/lib/postgresql/data
+    - pg_data:/var/lib/postgresql/data
   
   presto-coordinator:
     image: shawnzhu/prestodb:0.181
